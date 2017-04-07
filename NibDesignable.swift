@@ -90,7 +90,6 @@ extension UIView {
     }
 }
 
-@IBDesignable
 open class NibDesignable: UIView, NibDesignableProtocol {
 
     // MARK: - Initializer
@@ -106,7 +105,6 @@ open class NibDesignable: UIView, NibDesignableProtocol {
     }
 }
 
-@IBDesignable
 open class NibDesignableTableViewCell: UITableViewCell, NibDesignableProtocol {
     public override var nibContainerView: UIView {
         return self.contentView
@@ -125,7 +123,6 @@ open class NibDesignableTableViewCell: UITableViewCell, NibDesignableProtocol {
     }
 }
 
-@IBDesignable
 open class NibDesignableTableViewHeaderFooterView: UITableViewHeaderFooterView, NibDesignableProtocol {
 
 	public override var nibContainerView: UIView {
@@ -145,7 +142,6 @@ open class NibDesignableTableViewHeaderFooterView: UITableViewHeaderFooterView, 
 	}
 }
 
-@IBDesignable
 open class NibDesignableControl: UIControl, NibDesignableProtocol {
 
     // MARK: - Initializer
@@ -161,7 +157,6 @@ open class NibDesignableControl: UIControl, NibDesignableProtocol {
     }
 }
 
-@IBDesignable
 open class NibDesignableCollectionReusableView: UICollectionReusableView, NibDesignableProtocol {
 
     // MARK: - Initializer
@@ -177,7 +172,6 @@ open class NibDesignableCollectionReusableView: UICollectionReusableView, NibDes
     }
 }
 
-@IBDesignable
 open class NibDesignableCollectionViewCell: UICollectionViewCell, NibDesignableProtocol {
     public override var nibContainerView: UIView {
         return self.contentView
