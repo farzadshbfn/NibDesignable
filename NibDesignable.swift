@@ -96,12 +96,14 @@ open class NibDesignable: UIView, NibDesignableProtocol {
     override public init(frame: CGRect) {
         super.init(frame: frame)
         self.setupNib()
+		awakeFromNib()
     }
 
     // MARK: - NSCoding
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.setupNib()
+		awakeFromNib()
     }
 }
 
@@ -114,12 +116,14 @@ open class NibDesignableTableViewCell: UITableViewCell, NibDesignableProtocol {
     override public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.setupNib()
+		awakeFromNib()
     }
 
     // MARK: - NSCoding
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.setupNib()
+		awakeFromNib()
     }
 }
 
@@ -133,12 +137,14 @@ open class NibDesignableTableViewHeaderFooterView: UITableViewHeaderFooterView, 
 	override public init(reuseIdentifier: String?) {
 		super.init(reuseIdentifier: reuseIdentifier)
 		self.setupNib()
+		awakeFromNib()
 	}
 
 	// MARK: - NSCoding
 	required public init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 		self.setupNib()
+		awakeFromNib()
 	}
 }
 
@@ -148,12 +154,14 @@ open class NibDesignableControl: UIControl, NibDesignableProtocol {
     override public init(frame: CGRect) {
         super.init(frame: frame)
         self.setupNib()
+		awakeFromNib()
     }
 
     // MARK: - NSCoding
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.setupNib()
+		awakeFromNib()
     }
 }
 
@@ -163,12 +171,14 @@ open class NibDesignableCollectionReusableView: UICollectionReusableView, NibDes
     override public init(frame: CGRect) {
         super.init(frame: frame)
         self.setupNib()
+		awakeFromNib()
     }
 
     // MARK: - NSCoding
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.setupNib()
+		awakeFromNib()
     }
 }
 
@@ -181,11 +191,13 @@ open class NibDesignableCollectionViewCell: UICollectionViewCell, NibDesignableP
     override public init(frame: CGRect) {
         super.init(frame: frame)
         self.setupNib()
+		awakeFromNib()
     }
 
     // MARK: - NSCoding
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.setupNib()
+		awakeFromNib()
     }
 }
